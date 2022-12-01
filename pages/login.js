@@ -21,7 +21,7 @@ const Login = () => {
       // Trigger Magic link to be sent to user
       let didToken = await magic.auth.loginWithMagicLink({
         email,
-        redirectURI: new URL('/callback', window.location.origin).href, // optional redirect back to your app after magic link is clicked
+        // redirectURI: new URL('/callback', window.location.origin).href, // optional redirect back to your app after magic link is clicked
       });
 
       // Validate didToken with server
